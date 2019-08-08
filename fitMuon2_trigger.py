@@ -5,7 +5,8 @@ from optparse import OptionParser
 ###_id: tight, loose, medium, soft
 
 #_*_*_*_*_*_
-#Read Inputs
+#Skimming command:
+#../skimTree root://cmseos.fnal.gov//store/user/xuan/MuonTnP/TnPTree_17Nov2017_SingleMuon_Run2017Bv1_Full_GoldenJSON.root TnPTree_17Nov2017_SingleMuon_Run2017Bv1_Full_GoldenJSON.root -r "all" -k "pt eta abseta phi tag_nVertices charge tag_pt tag_eta tag_abseta tag_phi tag_IsoMu27 tag_combRelIsoPF04dBeta tag_bx tag_instLumi l1ptByQ l1drByQ l1qByQ Mu50 HLT_TkMu50 Loose Medium Medium2016 Tight2012 HighPt CutBasedIdGlobalHighPt TM relTkIso combRelIsoPF04dBeta run lumi event mass pair_deltaR pair_probeMultiplicity_Pt10_M60140" -c "tag_IsoMu27==1 && tag_pt > 28.9 && mass > 69.5 && mass < 130.5 && CutBasedIdGlobalHighPt"
 #_*_*_*_*_*_
 
 def FillNumDen(num, den):
